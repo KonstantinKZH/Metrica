@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    overflow-y: hidden;
+    overflow-x: hidden;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -14,7 +14,6 @@ body{
 *,
 *::after,
 *::before{
-    /* overflow-x: hidden; */
     letter-spacing: -0.03em;
 }
 
