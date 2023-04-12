@@ -128,7 +128,7 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     visibility: hidden;
@@ -1251,6 +1251,11 @@ body{
         padding-left: 13px;
         padding-right: 13px;
     }
+
+    /* .burger{
+        width: 274px;
+        max-height: 100%;
+    } */
 
 
     /* Basic Information */
