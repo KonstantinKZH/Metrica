@@ -31,31 +31,34 @@
                     <a class="navigation__link" href="#amenities">услуги</a>
                     <a class="navigation__link" href="#data-contacts">контакты</a>
                 </nav>
-                <div class="js-burger-btn burger-btn"></div>
+                <button class="js-burger-btn burger-btn"></button>
             </div>
         </div>
-    </header>
 
-    <div class="js-burger burger">
-        <div class="js-burger__content burger__content">
-            <a class="burger__logo-link" href="/"><img class="burger__logo" src="resources/images/nav-panel/Метрика.png"
-                alt="Метрика"></a>
-                <nav class="burger-navigation">
-                    <a class="burger-navigation__link" href="#for-us">о нас</a>
-                    <a class="burger-navigation__link" href="#draft">проекты</a>
-                    <a class="burger-navigation__link" href="#amenities">услуги</a>
-                    <a class="burger-navigation__link" href="#data-contacts">контакты</a>
+        <div id="burger_elements" class="js-burger burger">
+            <div class="js-burger__content burger__content">
+                <a class="burger__logo-link" href="/"><img class="burger__logo" src="resources/images/nav-panel/Метрика.png"
+                        alt="Метрика"></a>
+                <nav class="nav">
+                    <ul class="burger__list">
+                        <li><a class="burger-navigation__link item__burger" href="#for-us">о нас</a></li>
+                        <li><a class="burger-navigation__link item__burger" href="#draft">проекты</a></li>
+                        <li><a class="burger-navigation__link item__burger" href="#amenities">услуги</a></li>
+                        <li><a class="burger-navigation__link item__burger" href="#data-contacts">контакты</a></li>
+                    </ul>
                 </nav>
-
-                <div class="burger__contacts">
-                    <p class="burger__text">Для связи</p>
-                    <a class="burger__telephone-link" href="tel:+7 935  895-45-35">+7 935  895-45-35</a>
-                    <a class="burger__email-link" href="mailto:hello@mail.com">hello@mail.com</a>
-                </div>
-
-                <div class="js-burger-cross-btn burger__close-btn"></div>
+                <p class="burger__text">Для связи</p>
+                <ul class="burger__contacts">
+                    <li><a class="burger__telephone-link item__burger" href="tel:+7 935  895-45-35">+7 935 895-45-35</a>
+                    </li>
+                    <li><a class="burger__email-link item__burger" href="mailto:hello@mail.com">hello@mail.com</a></li>
+                </ul>
+    
+                <button class="js-burger-cross-btn burger__close-btn"></button>
+            </div>
         </div>
-    </div>
+
+    </header>
 
     <main class="main">
 
@@ -169,18 +172,19 @@
                 <div class="js-popup popup">
                     <div class="js-popup__content popup__content">
                         <div class="popup__content-wrapper">
+                            <button class="js-popup__close-btn popup__close-btn"></button>
                             <p class="popup__title">Заказать услугу</p>
                             <p class="popup__text">
                                 Заполните форму, мы свяжемся
                                 с вами в течение суток
                             </p>
-                            <div class="popup__input-wrapper">
-                                <input type="text" class="popup__input" placeholder="Имя">
-                                <input type="text" class="popup__input" placeholder="Электронная почта">
-                                <input type="text" class="popup__input" placeholder="Номер телефона">
-                            </div>
+                            <form class="popup__input-wrapper">
+                                <input name="name" type="text" class="input order_input" placeholder="Имя">
+                                <input name="email" type="email" class="input order_input"
+                                    placeholder="Электронная почта">
+                                <input name="phone" type="tel" class="input order_input" placeholder="Номер телефона">
+                            </form>
                             <button class="popup__btn">Отправить</button>
-                            <button class="js-popup__close-btn popup__close-btn"></button>
                         </div>
                     </div>
                 </div>

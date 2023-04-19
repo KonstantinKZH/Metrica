@@ -142,8 +142,7 @@ body{
 .burger__content{
     display: flex;
     flex-direction: column;
-
-    width: 70%;
+    width: 300px;
     height: 100%;
 
     padding-left: 30px;
@@ -157,8 +156,7 @@ body{
     width: 156px;
 }
 
-.burger-navigation{
-    margin-bottom: 90px;
+.burger__list{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -181,6 +179,7 @@ body{
 }
 
 .burger__text{
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -190,12 +189,8 @@ body{
 
 .burger__telephone-link{
     display: block;
-    
-    /* margin-bottom: 32px; */
     width: 480px;
-    
     position: relative;
-
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -207,37 +202,31 @@ body{
 
 .burger__email-link{
     display: block;
-
     width: 412px;
-
     position: relative;
-
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-decoration: none;
-
     color: var(--black-121212);
-
     transition: .3s linear;
 }   
 
 .burger__close-btn{
     display: none;
     position: absolute;
-
     width: 34px;
     height: 34px;
-
+    border: none;
     background-image: url('./resources/images/nav-panel/burger-cross.png');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
+    background-color: #ffffff;
 
 }
 
 /* MAIN */
-
 /* Basic information */
 .basic-information{
     margin-bottom: 150px;
@@ -245,9 +234,7 @@ body{
 
 .header-main{
     margin-bottom: 30px;
-
     width: 100%;
-    
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
@@ -272,15 +259,12 @@ body{
 
 .header-paragraph{
     width: 430px;
-
     position: absolute;
     left: 40px;
     top: 379px;
-
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
-
     color: #ffffff;
 }
 
@@ -292,7 +276,6 @@ body{
 
 .about-us-header{
     margin-bottom: 30px;
-
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -301,34 +284,26 @@ body{
 
 .about-us-paragraph{
     margin-bottom: 30px;
-
     width: 1148px;
-
     font-weight: 400;
     font-size: 45px;
     line-height: 61px;
-
     color: var(--black-121212);
 }
 
 .about-us-btn{
     display: block;
-    
     width: 255px;
     height: 67px;
-
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
     line-height: 67px;
-
     border: none;
     border-radius: 5px;
-    
     color: #ffffff;
     background-color: #AD1818;
-
     transition: .3s linear;
 }
 
@@ -344,12 +319,10 @@ body{
 
 .projects__header{
     margin-bottom: 30px;
-
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
     text-transform: uppercase;
-    
     color: var(--black-121212);
 }
 
@@ -359,7 +332,6 @@ body{
 
 .item__header{
     margin-bottom: 14px;
-
     font-size: 30px;
     font-weight: 400;
     line-height: 41px;
@@ -370,9 +342,7 @@ body{
     font-size: 20px;
     line-height: 27px;
     text-decoration: none;
-
     color: #AD1818;
-
     transition: .3s linear;
 }
 
@@ -384,15 +354,12 @@ body{
 .projects__link-btn{
     width: 100%;
     height: 153px;
-
     display: block;
-
     font-weight: 400;
     font-size: 30px;
     line-height: 153px;
     text-decoration: none;
     text-align: center;
-
     border: 1px solid #AD1818;
     border-radius: 6px;
     color: #AD1818;
@@ -402,7 +369,6 @@ body{
 
 .projects__link-btn:hover{
     border: 1px solid #AD1818;
-
     color: #ffffff;
     background-color: #AD1818;
 }
@@ -431,14 +397,12 @@ body{
     font-weight: 400;
     line-height: 25px;
     text-transform: uppercase;
-
     color: #ffffff;
 }
 
 .box-wrapper{
     margin-bottom: 106px;
     width: 1150px;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -457,33 +421,26 @@ body{
 
 .box-item__img{
     display: block;
-    /* width: 570px; */
 }
 
 .box-item__header{
     margin-top: 13px;
-
     font-size: 30px;
     font-weight: 400;
     line-height: 41px;
-
     color: #ffffff;
 }
 
 .box-item__price{
     padding: 5px 20px;
-
     position: absolute;
     left: 30px;
     top: 32px;
-
     background-color: #AD1818;
     border-radius: 5px;
-
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
-
     color: #ffffff;
 }
 
@@ -493,9 +450,7 @@ body{
     height: 153px;
     font-weight: 400;
     font-size: 30px;
-
     border-radius: 5px;
-    
     color: #ffffff;
     border: none;
     background-color: #AD1818;
@@ -527,15 +482,17 @@ body{
 }
 
 .popup__content{
-    width: 777px;
     max-height: 100%;
+    width: 777px;
+    height: 650px;
     background-color: #ffffff;
-    overflow-y: scroll;
+    border-radius: 10px;
+    overflow-y: auto;
 }
 
 .popup__content-wrapper{
     padding-top: 94px;
-    padding-bottom: 86px;
+    padding-bottom: 70px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -544,44 +501,44 @@ body{
 .popup__title{
     margin-bottom: 4px;
     font-weight: 400;
-    font-size: 45px;
-    line-height: 61px;
+    font-size: 40px;
+    line-height: 56px;
     text-align: center;
 }
 
 .popup__text{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 20px;
     text-align: center;
 }
 
 .popup__input-wrapper{
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 
-.popup__input{
-    margin: 0 auto;
-    width: 643px;
-    line-height: 54px;
+.input{
     border-left: none;
     border-right: none;
     border-top: none;
     border-bottom: 2px solid #A9A9A9;
-
     font-weight: 400;
-    font-size: 25px;
-    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 49px;
     color: #A9A9A9;
 }
 
-.popup__input:focus{
+.order_input{
+    width: 100%;
+}
+
+.input:focus{
     outline: none;
 }
 
@@ -589,8 +546,8 @@ body{
     margin: 0 auto;
     width: 644px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 67px;
+    font-size: 15px;
+    line-height: 62px;
     border-radius: 5px;
     border: none;
     color: #ffffff;
@@ -606,8 +563,8 @@ body{
     position: absolute;
     top: 32px;
     right: 34px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     background-color: #ffffff;
     background-image: url('./resources/icon/popup/cross.png');
@@ -621,20 +578,20 @@ body{
     transform: scale(0.945);
 }
 
-/* Reviews */
 
+
+
+/* Reviews */
 .reviews{
     margin-bottom: 157px;
 }
 
 .reviews__header{
     margin-bottom: 30px;
-
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-
     color: #121212;
 }
 
@@ -651,10 +608,6 @@ body{
     overflow-x: visible;
 }
 
-.box{
-    /* width: 528px; */
-   
-}
 
 /* Модивикатор */
 .box_big{
@@ -794,38 +747,17 @@ body{
     column-gap: 104px;
 }
 
-/* .contacts-header::before{
-    content: "";
-    display: block;
-    position: absolute;
-    
-    left: -4px;
-    top: -36px;
-
-    width: 24px;
-    height: 24px;
-
-    background-image: url('./resources/icon/icon-contacts.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-} */
-
 .contacts-telephone{
     display: block;
-    
     margin-bottom: 32px;
     width: 480px;
     height: 60px;
-    
     position: relative;
-
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
     text-decoration: none;
     letter-spacing: -0.02em;
-
     color: var(--black-121212);
 }
 
@@ -834,10 +766,8 @@ body{
     display: block;
     position: absolute;
     top: -50px;
-
     width: 24px;
     height: 24px;
-
     background-image: url('./resources/icon/contacts/icon-telephone.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -846,32 +776,24 @@ body{
 
 .contacts-link{
     display: block;
-
     width: 412px;
     height: 60px;
-
     position: relative;
-
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
     text-decoration: none;
-
     color: gray;
-
     transition: .3s linear;
 }
 
 .contacts-link::before{
     content: "";
     display: block;
-
     position: absolute;
     top: -50px;
-
     width: 24px;
     height: 24px;
-
     background-image: url('./resources/icon/contacts/icon-mail.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -884,19 +806,14 @@ body{
 
 .contacts-link::after{
     margin-top: 6px;
-
     width: 100%;
     height: 0.1px;
-
     content: "";
     display: none;
-
     position: absolute;
     left: 0;
     top: 100%;
-
     border: 1px solid var(--black-121212);
-
     background-color: var(--black-121212);
     opacity: 0.5; 
 }
@@ -907,7 +824,6 @@ body{
 }
 
 /* Footer */
-
 .footer{
     background-color: #121212;
     background-size: 100%;
@@ -919,14 +835,15 @@ body{
 }
 
 .footer__inner-wrapper{
-    margin-bottom: 87px;
     display: flex;
     justify-content: center;
+    
 }
 
 .nav{
     display: flex;
     column-gap: 53px;
+    margin-bottom: 87px;
 }
 
 .nav__link{
@@ -959,11 +876,6 @@ body{
     }
 
     /* Header */
-
-    .header-inner{
-        /* width: 100%; */
-    }
-
     .navigation{
         display: none;
     }
@@ -979,11 +891,9 @@ body{
         position: absolute;
         right: 15px;
         z-index: 101;
+        border: none;
+        background-color: #ffffff;
     }
-
-    /* .burger-btn_open{
-        display: none;
-    } */
 
     .burger_cross{
         display: none;
@@ -1097,8 +1007,8 @@ body{
     .popup__content-wrapper{
         padding-left: 74px;
         padding-right: 74px;
-        padding-top: 103px;
-        padding-bottom: 77px;
+        /* padding-top: 103px;
+        padding-bottom: 77px; */
     }
 
     .popup__input{
@@ -1110,8 +1020,8 @@ body{
     }
 
     .popup__close-btn{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         top: 41px;
         right: 44px;
     }
@@ -1173,10 +1083,6 @@ body{
         height: 536px;
     }
 
-    .gallery__slide_active{
-        /* opacity: 1; */
-    }
-
     .gallery__container-wrapper{
         top: 388px;
         left: 50px;
@@ -1236,13 +1142,6 @@ body{
         font-size: 60px;
         line-height: 60px;
     }
-
-    /* Footer */
-
-    .footer{
-        /* min-width: 960px;
-        max-width: 1148px; */
-    }
 }
 
 
@@ -1254,12 +1153,6 @@ body{
         padding-left: 13px;
         padding-right: 13px;
     }
-
-    /* .burger{
-        width: 274px;
-        max-height: 100%;
-    } */
-
 
     /* Basic Information */
     .basic-information{
@@ -1283,7 +1176,6 @@ body{
         font-size: 16px;
         line-height: 22px;
     }
-
 
     /* About Us */
     .about-us{
@@ -1311,7 +1203,6 @@ body{
         height: 51px;
         line-height: 51px;
     }
-
 
     /* Projects */
     .projects{
@@ -1357,7 +1248,6 @@ body{
     .black-container{
         width: 350px;
         padding: 80px 0;
-        
     }
 
     .services__header{
@@ -1394,7 +1284,6 @@ body{
     }
 
     /* POPUP */
-    
     .popup__content{
         width: 361px;
         margin-left: 7px;
@@ -1445,7 +1334,6 @@ body{
         
     }
 
-
     /* Reviews */
     .reviews{
         margin-bottom: 80px;
@@ -1464,11 +1352,6 @@ body{
 
     .col{
         width: 100%;
-    }
-
-    .box{
-        /* display: inline-block; */
-        /* width: 406px; */
     }
 
     .box_big{
@@ -1542,10 +1425,7 @@ body{
         height: 24px;
     }
 
-
-    
     /* Contacts */
-
     .contacts-container{
         padding-left: 11px;
         width: 100%;
@@ -1595,10 +1475,6 @@ body{
     }
 
     /* Footer */
-    .footer{
-        /* min-width: 410px; */
-    }
-
     .nav{
         column-gap: 30px;
     }
