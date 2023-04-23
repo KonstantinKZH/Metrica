@@ -496,6 +496,7 @@ body{
     padding-bottom: 70px;
     position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -517,6 +518,9 @@ body{
 
 .popup__input-wrapper{
     margin-bottom: 75px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1012,8 +1016,11 @@ body{
         padding-bottom: 77px; */
     }
 
-    .popup__input{
-        width: 100%;
+    .popup__input-wrapper{
+        margin-bottom: 75px;
+        padding-left: 0px;
+        padding-right: 0px;
+        row-gap: 30px;
     }
 
     .popup__btn{
@@ -1075,7 +1082,7 @@ body{
 
     .gallery__container-position{
         top: 80px;
-        left: 50px;
+        left: 15px;
     }
 
     .gallery__slide-header{
@@ -1090,10 +1097,12 @@ body{
 
     .gallery__container-wrapper{
         top: 388px;
-        left: 50px;
+        left: 15px;
     }
 
+
     .gallery__content{
+        /* width: calc(100% - 69px); */
         width: 374px;
         font-size: 25px;
         line-height: 34px;
@@ -1102,7 +1111,7 @@ body{
     .gallery__container-controls{
         column-gap: 14px;
         top: 344px;
-        left: 50px;
+        left: 15px;
     }
 
 
@@ -1416,14 +1425,14 @@ body{
 
     .gallery__control-prev{
         box-sizing: content-box;
-        padding-left: 7px;
+        padding-left: 15px;
         width: 14px;
         height: 24px;
     }
 
     .gallery__control-next{
         box-sizing: content-box;
-        padding-right: 7px;
+        padding-right: 15px;
         width: 14px;
         height: 24px;
     }
