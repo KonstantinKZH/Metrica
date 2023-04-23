@@ -1,7 +1,7 @@
 const BURGER_OPENED_CLASSNAME = 'burger_open';
 const BODY_FIXED_CLASSNAME = 'body_fixed';
 const BURGER_CROSS = 'burger_cross';
-const ITEM__BURGER = document.getElementsByClassName("item__burger");
+// const ITEM__BURGER = document.getElementsByClassName("item__burger");
 // const BURGER_BTN_OPENED_CLASSNAME = 'burger-btn_open';
 
 const bodyNode = document.querySelector('body');

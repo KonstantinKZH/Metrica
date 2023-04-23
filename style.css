@@ -1069,6 +1069,10 @@ body{
         height: 536px;
     }
 
+    .gallery{
+        
+    }
+
     .gallery__container-position{
         top: 80px;
         left: 50px;
@@ -1110,8 +1114,8 @@ body{
     }
 
     .contacts-container{
+        width: 100%;
         padding-left: 17px;
-        width: 959px;
     }
 
     .contacts-header{ 
@@ -1125,7 +1129,7 @@ body{
     }
 
     .contacts-telephone{
-        width: 354px;
+        width: 100%;
         height: 60px;
         
         position: relative;
@@ -1134,10 +1138,8 @@ body{
         line-height: 60px;
     }
 
-    
-
     .contacts-link{
-        width: 309px;
+        width: 100%;
         height: 60px;
 
         font-size: 60px;
@@ -1246,10 +1248,10 @@ body{
         min-width: 350px;
     }
 
-    .black-container{
+    /* .black-container{
         width: 350px;
         padding: 80px 0;
-    }
+    } */
 
     .services__header{
         margin-bottom: 20px;
@@ -1445,8 +1447,8 @@ body{
     }
 
     .contacts-telephone{
-        width: 354px;
-        width: calc(100% - 42px);
+        /* width: calc(100% - 42px); */
+        width: 276px;
         height: 60px;
 
         font-size: 35px;
@@ -1460,7 +1462,7 @@ body{
     }
 
     .contacts-link{
-        width: 309px;
+        width: 240px;
         height: 60px;
         font-size: 35px;
         line-height: 46px;
@@ -1471,7 +1473,6 @@ body{
     .contacts-link::before{
         width: 18px;
         height: 18px;
-
         top: -30px;
     }
 
