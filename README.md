@@ -3,8 +3,10 @@
 Сайт дизайн студии, занимающейся созданием интерьеров
 
 ## Изображения
-<img src="/images/img1.png" width="110" height="30">
-<img src="/images/img2.png" width="110" height="30">
-<img src="/images/img3.png" width="110" height="30">
-<img src="/images/img4.png" width="110" height="30">
-<img src="/images/img5.png" width="110" height="30">
+<div class="container" style="display: flex; justify-content: center; flex-direction: column;">
+    <img style="margin: 0 auto; margin-bottom: 10px;" src="/images/img1.png" width="650">
+    <img style="margin: 0 auto; margin-bottom: 10px;" src="/images/img2.png" width="650">
+    <img style="margin: 0 auto; margin-bottom: 10px;" src="/images/img3.png" width="650">
+    <img style="margin: 0 auto; margin-bottom: 10px;" src="/images/img4.png" width="650">
+    <img style="margin: 0 auto; margin-bottom: 10px;" src="/images/img5.png" width="650">
+</div>
