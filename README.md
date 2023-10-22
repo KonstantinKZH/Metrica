@@ -11,5 +11,5 @@
     <img style="margin-bottom: 10px;" src="/images/img5.png" width="100%">
 </div>
 
-### Ссылка на сайт
+### Ссылка на проект
 https://konstantinkzh.github.io/Metrica/
